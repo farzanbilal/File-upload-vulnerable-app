@@ -26,6 +26,7 @@ A minimal Flask-based web application intentionally designed with insecure file 
 
 ## Threat Model
 <img width="495" height="368" alt="threatmodel" src="https://github.com/user-attachments/assets/8decb6ff-2c7d-4ed9-8ebe-229c9ee4681a" />
+---
 ## Data flows:
 User uploads file → /upload
 App stores file → uploads/
