@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vulnerable Upload Lab</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background 0.3s, color 0.3s;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 80px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Light Mode */
+        body.light {
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        body.light .container {
+            background: #fff;
+        }
+
+        body.light button {
+            background: #007bff;
+            color: white;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background: #121212;
+            color: #eee;
+        }
+
+        body.dark .container {
+            background: #1e1e1e;
+        }
+
+        body.dark button {
+            background: #00c853;
+            color: black;
+        }
+    </style>
+</head>
+<body class="light">
+
+    <button class="toggle" onclick="toggleMode()">🌙 Toggle Mode</button>
+
+    <div class="container">
+        <h2>Vulnerable File Upload Lab</h2>
+
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="file"><br>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle("dark");
+            body.classList.toggle("light");
+        }
+    </script>
+
+</body>
+</html>
