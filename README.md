@@ -13,7 +13,6 @@ A minimal Flask-based web application intentionally designed with insecure file 
 
 ## Key Vulnerabilities
 - Arbitrary file upload  
-- Path traversal  
 - Stored XSS  
 - No authentication / access control  
 - Unsafe file serving  
