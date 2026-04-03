@@ -1,4 +1,4 @@
-# File Upload Vulnerable App
+<img width="1721" height="389" alt="image" src="https://github.com/user-attachments/assets/3f5357e4-d4ad-47ae-b12d-f1dced207a05" /><img width="1721" height="389" alt="image" src="https://github.com/user-attachments/assets/3f5357e4-d4ad-47ae-b12d-f1dced207a05" /># File Upload Vulnerable App
 
 ## Vulnerable File Upload Lab
 A minimal Flask-based web application intentionally designed with insecure file upload functionality to demonstrate common vulnerabilities such as arbitrary file upload, path traversal, stored XSS, and file overwrite.
@@ -22,10 +22,13 @@ A minimal Flask-based web application intentionally designed with insecure file 
 ## Tech Stack
 - Python (Flask)  
 - HTML, CSS, JavaScript  
-
+---
+<img width="1721" height="389" alt="image" src="https://github.com/user-attachments/assets/4912a0d8-9563-4f39-88ff-9e67962cb4e2" />
+---
 
 ## Threat Model
 <img width="495" height="368" alt="threatmodel" src="https://github.com/user-attachments/assets/8decb6ff-2c7d-4ed9-8ebe-229c9ee4681a" />
+
 ---
 ## Data flows:
 User uploads file → /upload
